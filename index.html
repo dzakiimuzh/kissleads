@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <title>Kissleads</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: circular;
+        }
+
+        .container1 .btn:hover,
+        .container2 .btn:hover,
+        .container3 .btn:hover,
+        .container6 .btn:hover,
+        .container7 .btn:hover {
+            transform: scale(.9);
+        }
+
+        @font-face {
+            font-family: circular;
+            src: url(assets/font/circularstd-book.otf);
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .navbar .navbar-nav .btn {
+            width: 110px;
+            height: 48px;
+            letter-spacing: .5px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2D8AFF;
+            transition: .8s;
+        }
+
+        .navbar .navbar-nav .btn:hover {
+            transform: scale(.9);
+        }
+
+        .navbar .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-nav .nav-link:nth-child(1) {
+            color: white;
+            margin-right: 41px;
+            transition: .8s;
+        }
+
+        .navbar .navbar-nav .nav-link:nth-child(1):hover {
+            transform: scale(.9);
+        }
+
+        .jumbotron {
+            height: 850px;
+            background: url('assets/img/BG\ HERO.png') no-repeat;
+            background-size: cover;
+            color: white;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            margin-top: -100px;
+        }
+
+        .jumbotron .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .jumbotron h1 {
+            font-weight: bold;
+            width: 70%;
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        .jumbotron p {
+            width: 58%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 25px;
+            line-height: 30px;
+            letter-spacing: .5px;
+        }
+
+        .jumbotron .btn {
+            width: 250px;
+            height: 70px;
+            z-index: 99999;
+            background-color: white;
+            color: #273029;
+            border: none;
+            display: flex;
+            margin-top: 35px;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 900;
+            transition: .8s;
+        }
+
+        .jumbotron .btn:hover {
+            transform: scale(.9);
+        }
+
+        .jumbotron .container p.credit {
+            font-size: 14px;
+            letter-spacing: .5px;
+            opacity: .7;
+            font-weight: normal;
+            color: white;
+            margin-top: 12px;
+        }
+
+        .jumbotron img {
+            /* width: 1151px; */
+            margin-top: -180px;
+        }
+
+        .join {
+            margin-top: 400px;
+            text-align: center;
+            height: 430px;
+        }
+
+        .join .col-md-12 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .join h1 {
+            font-size: 48px;
+            letter-spacing: .5px;
+            color: #273029;
+            font-weight: bold;
+        }
+
+        .join img {
+            margin-top: 24px;
+        }
+
+        .join p {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: .5px;
+            color: #888888;
+            width: 58%;
+            margin-top: 59px;
+        }
+
+        .join .brand img:nth-child(2) {
+            height: 39.6px;
+        }
+
+        .join .brand img:nth-child(3) {
+            height: 25.2px;
+        }
+
+        .join .brand img:nth-child(4) {
+            height: 36px;
+        }
+
+        .join .brand img:nth-child(5) {
+            height: 39.48px;
+        }
+
+        .join .brand {
+            width: 1000px;
+            height: 88px;
+            align-items: center;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container1 {
+            height: 492px;
+            margin-top: 150px;
+        }
+
+        .container1 h1 {
+            font-size: 48px;
+            margin-top: 20px;
+            letter-spacing: .5px;
+            color: #273029;
+            line-height: 64px;
+            font-weight: bold;
+        }
+
+        .container1 p {
+            letter-spacing: .5px;
+            font-size: 20px;
+            margin: 35px 0;
+            line-height: 30px;
+            color: #888888;
+            font-weight: normal;
+        }
+
+        .container1 .btn {
+            width: 270px;
+            height: 74px;
+            background: #2D8AFF;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .5px;
+            transition: .8s;
+        }
+
+        .container1 .col-md-6:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 492px;
+        }
+
+        .container1 img {
+            width: 758px;
+            transform: translateX(10px);
+            margin-top: 140px;
+            height: 1033px;
+        }
+
+        .container2 {
+            margin-top: 120px;
+            height: 610px;
+        }
+
+        .container2 img {
+            /* width: 800px; */
+            margin-top: 200px;
+        }
+
+        .container2 .col-md-6:nth-child(1) {
+            height: 610px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container2 .col-md-6:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container2 h1 {
+            font-size: 48px;
+            letter-spacing: .5px;
+            color: #273029;
+            line-height: 64px;
+            font-weight: bold;
+        }
+
+        .container2 p {
+            letter-spacing: .5px;
+            font-size: 20px;
+            margin: 35px 0;
+            line-height: 30px;
+            color: #888888;
+            font-weight: normal;
+        }
+
+        .container2 .btn {
+            width: 270px;
+            height: 74px;
+            background: #2D8AFF;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .5px;
+            transition: .8s;
+        }
+
+        section.section1 img.decor {
+            position: absolute;
+            left: 0;
+        }
+
+        .container3 {
+            margin-top: 150px;
+            height: 564px;
+        }
+
+        .container3 h1 {
+            font-size: 48px;
+            letter-spacing: .5px;
+            color: #273029;
+            line-height: 64px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .container3 .col-md-6:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container3 .col-md-6:nth-child(1) {
+            height: 564px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container3 .col-md-6:nth-child(2) img {
+            margin-top: -132px;
+        }
+
+        .container3 p {
+            letter-spacing: .5px;
+            font-size: 20px;
+            margin: 32px 0;
+            line-height: 30px;
+            color: #888888;
+            font-weight: normal;
+        }
+
+        .container3 .col-md-6:nth-child(1) p:nth-child(3) {
+            color: #273029;
+            margin: 0 0 32px 0;
+        }
+
+        .container3 .btn {
+            width: 270px;
+            height: 74px;
+            background: #2D8AFF;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .5px;
+            transition: .8s;
+        }
+
+        .container4 {
+            height: 778px;
+            margin-top: 150px;
+        }
+
+        .container4 .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container4 .name {
+            text-align: center;
+        }
+
+        .container4 .card {
+            height: 442px;
+            margin-top: 130px;
+            width: 442px;
+            border-radius: 8px;
+            background: #FFFFFF;
+            box-shadow: 0px 100px 250px rgba(0, 0, 0, 0.08);
+        }
+
+        .container4 .card img {
+            width: 90px;
+        }
+
+        .container4 .judul h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #273029;
+            letter-spacing: .5px;
+            text-align: center;
+        }
+
+        .container4 .card1 {
+            background-color: transparent;
+            box-shadow: unset;
+        }
+
+        .container4 .col-md-4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container4 h2 {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 900;
+            margin-top: 19px;
+            letter-spacing: .5px;
+        }
+
+        .container4 span {
+            font-size: 14px;
+            color: #888888;
+            letter-spacing: .5px;
+        }
+
+        .container4 img.star {
+            width: 140px;
+        }
+
+        .container4 p {
+            font-size: 16px;
+            width: 90%;
+            line-height: 26px;
+            text-align: center;
+            color: #273029;
+            letter-spacing: .5px;
+        }
+
+        .container4 .bungkus {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }   
+
+        .section2 img.decor {
+            position: absolute;
+            right: -30px;
+            top: -230px;
+            z-index: -3;
+        }
+
+        .section2 {
+            position: relative;
+        }
+
+        .container5 {
+            margin-top: 80px;
+        }
+
+        .container5 h1 {
+            font-weight: bold;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 0;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+            color: #273029;
+        }
+
+        .container5 span {
+            margin-top: 42px;
+            display: inline-block;
+            color: #888888;
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: .5px;
+        }
+
+        .container5 .judul {
+            text-align: center;
+        }
+
+        .container5 .card {
+            margin-top: 90px;
+            background-color: white;
+            width: 370px;
+            border: none;
+            height: 370px;
+        }
+
+        .container5 .col-md-4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container5 .card img {
+            width: 32px;
+            /* margin-top: 58px; */
+        }
+
+        .container5 .card p {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 0;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #273029;
+        }
+
+        .container5 .card span {
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 0;
+            width: 95%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #888888;
+        }
+
+        .container5 .card1 {
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .container5 .card2 {
+            box-shadow: 0px 100px 250px rgba(0, 0, 0, 0.08);
+        }
+
+        .container5 .card .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container5 .card .pembungkus {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section3 .decor3 {
+            position: absolute;
+            left: 0;
+        }
+
+        .container6 {
+            margin-top: 150px;
+            height: 981px;
+        }
+
+        .container6 h1 {
+            font-weight: bold;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 0;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+            color: #273029;
+        }
+
+        .container6 span {
+            margin-top: 42px;
+            display: inline-block;
+            color: #888888;
+            font-weight: normal;
+            font-size: 20px;
+            width: 50%;
+            text-align: center;
+            letter-spacing: .5px;
+        }
+
+        .container6 .judul {
+            text-align: center;
+        }
+
+        .container6 .card {
+            margin-top: 91px;
+            width: 100% !important;
+            height: 580px;
+            box-shadow: 0px 100px 250px rgba(0, 0, 0, 0.08);
+            border: none;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .container6 .card .type {
+            width: 96%;
+            /* background-color: salmon; */
+            height: 140px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #DEDEDE;
+            align-items: flex-start;
+        }
+
+        .container6 .card .type.dua img {
+            position: absolute;
+            right: 25px;
+            top: 0;
+        }
+
+        .container6 .card .type h1 {
+            font-weight: 900;
+            margin-top: 10px;
+            font-size: 20px;
+            color: #273029;
+            letter-spacing: .5px;
+        }
+
+        .container6 .card .type span {
+            width: 290px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: .5px;
+        }
+
+        .container6 .card .type span.sml {
+            width: 256px !important;
+        }
+
+        .container6 .card .harga {
+            width: 96%;
+            display: flex;
+            align-items: flex-end;
+            margin: 30px auto;
+        }
+
+        .container6 .card .promo {
+            width: 297.594px;
+            justify-content: space-between;
+            position: relative;
+            height: 75px;
+        }
+
+        .container6 .card .promo h6 {
+            text-decoration: line-through;
+            font-size: 20px;
+            letter-spacing: .5px;
+            color: #888888;
+            position: absolute;
+            top: 0;
+        }
+
+        .container6 .card .promo h6::before {
+            content: '$';
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 1px;
+        }
+
+        .container6 .card .promo .special {
+            display: flex;
+            width: 210px;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .container6 .card .dua {
+            width: 96%;
+            /* background-color: salmon; */
+            height: 121px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #DEDEDE;
+            align-items: flex-start;
+        }
+
+        .container6 .card .promo .special span {
+            width: 100%;
+            text-align: left;
+        }
+
+        .container6 .card .harga span {
+            margin: 0 0 0 -4px;
+            width: 60px;
+            font-size: 14px;
+            letter-spacing: .5px;
+            color: #888888;
+        }
+
+        .container6 .card .harga h1 {
+            color: #27AE60;
+            height: 55px;
+            font-weight: bold;
+            font-size: 54px;
+            letter-spacing: 0.5px;
+        }
+
+        .container6 .card .harga h1::before {
+            content: '$';
+            display: inline-block;
+            font-size: 30px;
+            margin-right: 2px;
+        }
+
+        .container6 .card .list .isi-list {
+            width: 110%;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container6 .card .list .isi-list p {
+            margin: 0;
+            letter-spacing: .5px;
+            font-size: 15px;
+            font-weight: normal;
+            width: 100%;
+            color: #273029;
+            margin-left: 18px;
+        }
+
+        .container6 .card .list .isi-list p.silang {
+            color: #888888;
+        }
+
+        .container6 .card .list .isi-list img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .container6 .card .list {
+            margin: 50px auto;
+            width: 96%;
+        }
+
+        .container6 .baris-btn .btn {
+            width: 270px;
+            height: 74px;
+            background: #2D8AFF;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .5px;
+            transition: .8s;
+        }
+
+        .container6 .baris-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 95px auto 0;
+        }
+
+        .section3 img.decor3 {
+            position: absolute;
+            top: -450px;
+            z-index: -4;
+        }
+
+        .section3 {
+            position: relative;
+        }
+
+        .container7 {
+            margin-top: 200px;
+            height: 410px;
+            background: url('assets/img/Group\ 46.png');
+            background-size: cover;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .container7 .col-md-12 .btn {
+            width: 270px;
+            height: 74px;
+            background: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 900;
+            color: #273029;
+            margin-top: 83px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .5px;
+            transition: .8s;
+        }
+
+        .container7 .col-md-12 h1 {
+            font-size: 48px;
+            margin-top: 71px;
+            color: white;
+            letter-spacing: .5px;
+            font-weight: bold;
+        }
+
+        .container7 .col-md-12 {
+            text-align: center;
+        }
+
+        .container7 .col-md-12 span {
+            color: white;
+            margin-top: 17px;
+            letter-spacing: .5px;
+            font-size: 20px;
+        }
+
+        .container7 img.img1 {
+            position: absolute;
+            top: -60px;
+            left: 55px;
+        }
+
+        .container7 img.img2 {
+            position: absolute;
+            bottom: -160px;
+            right: 180px;
+        }
+
+        .container7 img.img3 {
+            position: absolute;
+            top: -80px;
+            right: 70px;
+        }
+
+        .footer {
+            height: 320px;
+            background: #2D8AFF;
+            margin-top: 200px;
+            position: relative;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: white;
+            letter-spacing: .5px;
+            font-weight: normal;
+        }
+
+        .footer .row {
+            display: flex;
+        }
+
+        .footer img {
+            margin-top: 52.48px;
+        }
+
+        .footer .row .col-md-5 p {
+            margin-top: 23.52px;
+            width: 469px;
+            line-height: 26px;
+        }
+
+        .footer .row .col-md-4 p,
+        .footer .row .col-md-3 p {
+            margin-top: 122px;
+        }
+
+        .footer .row .col-md-3 p {
+            margin-left: 130px;
+        }
+
+        .footer .row .col-md-5 {
+            padding-left: 136px;
+        }
+
+        .footer .copy {
+            height: 72px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .copy p {
+            margin-bottom: 0;
+            color: #2D8AFF;
+            letter-spacing: .5px;
+        }
+
+        .footer .copy span {
+            color: #273029;
+        }
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pt-4" data-aos="fade-right">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/img/Group 42 (1).png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#">
+                        <div class="btn">Start Free</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4">Our Influencers Turn Marketers Into Superheroes</h1>
+            <p class="lead">With millions of influencers updated daily, we help marketers find the perfect influencer to
+                make your next campaigns a hit</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Go to My Dashboard</a>
+            <p class="credit" data-aos="fade-up">No credit card requered!</p>
+        </div>
+        <img src="assets/img/Group 41.png" data-aos="fade-up">
+    </div>
+    <div class="container join">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 data-aos="fade-up">Join The Best</h1>
+                <img src="assets/img/STARS.png" data-aos="fade-up">
+                <p data-aos="fade-up">Marketers working with some of the world's most exciting brands use KissLeads to find their
+                    influencers</p>
+                <div class="brand">
+                    <img src="assets/img/image 5.png" data-aos="fade-right">
+                    <img src="assets/img/image 6.png" data-aos="fade-right">
+                    <img src="assets/img/image 7.png">
+                    <img src="assets/img/image 8.png" data-aos="fade-left">
+                    <img src="assets/img/image 9.png" data-aos="fade-left">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container1">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h1>Stop wasting time manually searching for influencers</h1>
+                <p>Massively save time by letting our KissScore algorithm find the best influencers for you.</p>
+                <a href="" class="btn">Try It Now</a>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="assets/img/Group 43 (1).png">
+            </div>
+        </div>
+    </div>
+    <section class="section1">
+        <img src="assets/img/BG DECORATION.png" class="decor">
+        <div class="container container2">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="assets/img/Group 44.png">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h1>Find niche pages that skyrocket your ROI</h1>
+                    <p>Niche accounts are where the gold is. No other tool on the market identifies niche accounts like
+                        we
+                        do - tap into them today.</p>
+                    <a href="" class="btn">Find Page Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container container3">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h1>All the reporting metrics you care about</h1>
+                <p>Make decisions based on data - export all relevant information including:</p>
+                <p>Average Likes, Average Video Views, Emails, Phone Numbers, Follower Counts, Most Used Hashtags, our
+                    Calculated KissScore and so much more.</p>
+                <a href="" class="btn">Start My Free Trial Now</a>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="assets/img/Group 45.png">
+            </div>
+        </div>
+    </div>
+
+    <section class="section2">
+        <img src="assets/img/BG DECORATION (1).png" class="decor">
+        <div class="container container4">
+            <div class="judul" data-aos="fade-up">
+                <h1>Take it from our users</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card1 border-0" style="width: 22rem;" data-aos="fade-right">
+                        <div class="card-body">
+                            <div class="name">
+                                <img src="assets/img/Ellipse 5.png" class="card-img-top">
+                                <h2>Jennifer Spann</h2>
+                                <span>Talent Executive</span>
+                            </div>
+                            <p class="card-text">“ Finding hundreds of campaign influencers now takes minutes
+                                Game-changer ”
+                            </p>
+                            <img src="assets/img/STARS (1).png" class="star">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0" style="width: 22rem;">
+                        <div class="card-body">
+                            <div class="name">
+                                <img src="assets/img/Ellipse 5 (1).png" class="card-img-top">
+                                <h2>Melody</h2>
+                                <span>Model</span>
+                            </div>
+                            <p class="card-text">If you use influencers you’re going to Love Kissleads. It’s literally
+                                made for people like us ”
+                            </p>
+                            <img src="assets/img/STARS (1).png" class="star">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0" style="width: 22rem;" data-aos="fade-left">
+                        <div class="card-body">
+                            <div class="name">
+                                <img src="assets/img/Ellipse 5 (2).png" class="card-img-top">
+                                <h2>Brandon</h2>
+                                <span>Shopify Partner</span>
+                            </div>
+                            <p class="card-text">“ In just one week, Kissleads helped us increase sales by 24% its
+                                become our #1 tool for finding infulencer ”
+                            </p>
+                            <img src="assets/img/STARS (1).png" class="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container5">
+            <div class="judul" data-aos="fade-up">
+                <h1>Features You Need</h1>
+                <span>Everything needed to win at Influencer marketing</span>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card1" data-aos="fade-right">
+                        <div class="card-body">
+                            <div class="pembungkus">
+                                <img src="assets/img/cib_react.png" class="card-img-top">
+                                <p class="card-text">Let A.I Work For You</p>
+                                <span>KissLeads works like no other platform. We let you tell us your ideal influencers
+                                    and
+                                    then we use A.I. to discover hundreds like it!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card2">
+                        <div class="card-body">
+                            <div class="pembungkus">
+                                <img src="assets/img/MAIL ICON.png" class="card-img-top">
+                                <p class="card-text">Personal Email</p>
+                                <span>DMs get ignored by big pages. Contact them directly using their personal email
+                                    addresses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-left">
+                        <div class="card-body">
+                            <div class="pembungkus">
+                                <img src="assets/img/ion_time-outline.png" class="card-img-top">
+                                <p class="card-text">Save Time</p>
+                                <span>Finding talent shouldn’t be hard. KissLeads lets you discover the perfect accounts
+                                    in
+                                    minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-right">
+                            <div class="card-body">
+                                <div class="pembungkus">
+                                    <img src="assets/img/bi_check-circle.png" class="card-img-top">
+                                    <p class="card-text">Constantly Updated</p>
+                                    <span>We’re always adding new features to KissLeads to make it the market leading
+                                        tool for influencer discovery </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="pembungkus">
+                                    <img src="assets/img/ic_round-access-time.png" class="card-img-top">
+                                    <p class="card-text">Save Money</p>
+                                    <span>Discover and email hundreds of potential influencers to get the best price out
+                                        there</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-body">
+                                <div class="pembungkus">
+                                    <img src="assets/img/clarity_chat-bubble-line.png" class="card-img-top">
+                                    <p class="card-text">5 Star Support</p>
+                                    <span>Feel safe and secure knowing live help is just one click away!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section3">
+        <img src="assets/img/BG DECORATION 2.png" class="decor3">
+        <div class="container container6">
+            <div class="judul" data-aos="fade-up">
+                <h1>Pricing</h1>
+                <span>KissLeads has some of the most competitive pricing options available</span>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-right">
+                        <div class="card-body">
+                            <div class="type">
+                                <h1>Basic</h1>
+                                <span>For starters just getting going with influencers </span>
+                            </div>
+                            <div class="harga">
+                                <h1>49</h1>
+                                <span>/month</span>
+                            </div>
+                            <div class="list">
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>200 Influencer Emails</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Basic Support</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/x.png" alt="">
+                                    <p class="silang">Limited Search Functionality</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/x.png" alt="">
+                                    <p class="silang">Deep Search</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/x.png" alt="">
+                                    <p class="silang">Search 3.8m Influencers Database </p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/x.png" alt="">
+                                    <p class="silang">Only 1 Search at a Time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-dua" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="type dua">
+                                <img src="assets/img/Group 32.png">
+                                <h1>Growth</h1>
+                                <span class="sml">For users who want better data, more emails and more features </span>
+                            </div>
+                            <div class="harga promo">
+                                <h6>110</h6>
+                                <h1>67</h1>
+                                <div class="special">
+                                    <span>/month</span>
+                                    <span>(special price ending soon)</span>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>1000 Influencer Emails</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>PiorLimitedity Support</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Most Search Features</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Deep Search</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Search 3.8m Influencers Database </p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/x.png" alt="">
+                                    <p class="silang">Only 1 Search at a Time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-left">
+                        <div class="card-body">
+                            <div class="type">
+                                <h1>Power</h1>
+                                <span>For experienced marketers and agencies who understand the importance of influencer
+                                    marketing</span>
+                            </div>
+                            <div class="harga">
+                                <h1>199</h1>
+                                <span>/month</span>
+                            </div>
+                            <div class="list">
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>5000 Influencer Emails</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Gold Support</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Complete Search Functionality</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Deep Search</p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Search 3.8m Influencers Database </p>
+                                </div>
+                                <div class="isi-list">
+                                    <img src="assets/img/check.png" alt="">
+                                    <p>Unlimated Searches at a Time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row baris-btn" data-aos="fade-up">
+                <div class="btn">Start My Free Trial Now</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container7">
+        <img src="assets/img/Ellipse 7.png" class="img1" data-aos="fade-right">
+        <img src="assets/img/Ellipse 8.png" class="img2" data-aos="fade-left">
+        <img src="assets/img/Ellipse 9.png" class="img3" data-aos="fade-left">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 data-aos="fade-up">Start Your Free Trial Now!</h1>
+                <span data-aos="fade-up">No credit card required</span>
+                <div class="btn mx-auto" data-aos="fade-up">Start Kissl***** Now - Free</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="assets/img/Group 42 (1).png">
+                <p>KissL***** is a leading influencer discovery platform. Use our dynamic A.I. powered technology to
+                    find your next winning influencer.</p>
+            </div>
+            <div class="col-md-3">
+                <p>Privacy Policy</p>
+            </div>
+            <div class="col-md-4">
+                <p>Term and Conditions</p>
+            </div>
+        </div>
+        <div class="row copy">
+            <p>© 2020 <span>KissL***</span> All Rights Reserved</p>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.js"></script>
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+        });
+      
+      </script>
+</body>
+
+</html>

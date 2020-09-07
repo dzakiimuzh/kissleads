@@ -1,0 +1,826 @@
+
+@media ( max-width: 1280px ) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 1125px) {
+    .jumbotron img {
+        width: 100%;
+        margin-top: -150px;
+    }
+    .container6 .card .type span.sml {
+        width: 200px !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .navbar .navbar-nav .nav-link:nth-child(1) {
+        color: #2d8aff;
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    button.navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar .navbar-brand img {
+        width: 140px;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav .btn {
+        margin-bottom: 120px;
+        color: white;
+        width: 150px;
+        background-color: #2d8aff;
+    }
+
+
+    .join .brand {
+        width: 100%;
+    }
+
+    .join h1 {
+        font-size: 40px;
+    }
+
+    .join .brand img {
+        width: 100px;
+    }
+
+    .join .brand {
+        margin-top: 30px;
+    }
+
+    .join {
+        margin-top: 300px;
+    }
+
+    .join img {
+        width: 190px;
+    }
+
+    .join p {
+        font-size: 16px;
+    }
+
+    .jumbotron img {
+        margin-top: -80px;
+    }
+
+    .jumbotron h1 {
+        font-size: 50px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+    }
+
+    .container1 {
+        margin-top: 100px;
+    }
+
+    .container2 {
+        margin-top: 10px;
+    }
+
+    .container3 {
+        margin-top: 100px;
+    }
+
+    .container1 img,
+    .container2 img,
+    .container3 img {
+
+        width: 600px;
+    }
+
+    .container2 img {
+        margin-top: 150px;
+    }
+
+    .container1 img {
+        margin-top: 50px;
+    }
+
+    .container3 .row .col-md-6:nth-child(2) img {
+        margin-top: -20px;
+        transform: translateX(30px);
+    }
+
+    .container1 h1,
+    .container2 h1,
+    .container3 h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .container1 p,
+    .container2 p,
+    .container3 p {
+        font-size: 16px;
+    }
+
+    .container1 img {
+        height: 650px;
+    }
+
+    .container4 .judul h1 {
+
+        font-size: 40px;
+
+    }
+
+    .container4 h2 {
+        font-size: 20px;
+    }
+
+    .container4 p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .container4 img.star {
+        width: 120px;
+    }
+
+    .container5 h1 {
+        font-size: 40px;
+    }
+
+    .container5 span {
+        font-size: 16px;
+    }
+
+    .container5 .card p {
+        font-size: 20px;
+    }
+
+    .container5 .card span {
+        font-size: 14px;
+    }
+
+    .container6 h1 {
+        font-size: 40px;
+    }
+
+    .container6 span {
+        font-size: 16px;
+    }
+
+    .container6 .card {
+        height: 690px;
+    }
+
+    .container6 .card .type span {
+        width: 100%;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .container6 .card .type span.sml {
+        width: 100% !important;
+    }
+
+    .container6 .card .type.dua img {
+        width: 20px;
+    }
+    
+    .container6 .card .promo h6 {
+        font-size: 16px;
+        top: 10px;
+    }
+
+    .container6 .card .harga h1 {
+        font-size: 40px;
+        height: 42px;
+    }
+
+    .container6 .card .harga span {
+        font-size: 13px;
+        margin: 0 0 0 -6px;
+        
+    }
+
+    .container6 .card .promo .special span {
+        width: 100px;
+    }
+
+    .container6 .card .list .isi-list p {
+        font-size: 14px;
+    }
+
+    .container7 {
+        margin-top: 300px;
+    }
+
+    .container7 .col-md-12 h1 {
+        font-size: 40px;
+    }
+
+    .container7 .col-md-12 span {
+        font-size: 16px;
+    }
+
+    .container7 img.img1 {
+        width: 90px;
+        top: -45px;
+    }
+
+    .container7 img.img2  {
+        width: 200px;
+        bottom: -140px;
+    }
+
+    .footer .row .col-md-5 p {
+        width: 300px;
+    }
+
+    .footer .copy p {
+        font-size: 12px;
+    }
+
+    .footer .copy {
+        height: 60px;
+    }
+
+}
+
+@media ( max-width: 830px ) {
+
+    .footer .row .col-md-4 p {
+        margin-left: 50px;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .jumbotron {
+        width: 100%;
+    }
+
+    .navbar .navbar-nav .nav-link:nth-child(1) {
+        color: #2d8aff;
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    button.navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar .navbar-brand img {
+        width: 140px;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav .btn {
+        margin-bottom: 120px;
+        color: white;
+        width: 150px;
+        background-color: #2d8aff;
+    }
+
+}
+
+@media ( max-width: 768px ) {
+
+    
+    html, body {
+        overflow-x: hidden;
+    }
+    
+
+    .jumbotron h1 {
+        font-size: 45px;
+    }
+
+    .jumbotron p {
+        color: rgb(238, 238, 238);
+        
+    }
+
+    .jumbotron img {
+        margin-top: -10px;
+    }
+
+    .join h1 {
+        font-size: 35px;
+    }
+
+    .join img {
+        width: 160px;
+    }
+
+    .join .brand img {
+        width: 60px;
+    }
+
+    .container1 .row {
+        display: flex;
+    }
+
+    .container1 {
+        height: auto;
+    }
+
+    .container1 .row .col-md-6:nth-child(1) {
+        order: 2;
+    }
+
+    .container1 img {
+        width: 758px;
+        height: 800px;
+    }
+
+    .container2 {
+        height: auto;
+        margin-top: 200px;
+    }
+
+    .container2 .col-md-6:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .container2 img {
+        width: 765px;
+    }
+
+    .container3 {
+        height: auto;
+    }
+
+    .container3 .row .col-md-6:nth-child(1) {
+        order: 2;
+        margin-top: -240px;
+    }
+
+    .container3 img {
+        width: 724px;
+    }
+
+    .container4 {
+        height: auto;
+    }
+
+    .container4 h2 {
+        font-size: 30px;
+    }
+
+    .container4 span {
+        font-size: 14px;
+    }
+
+    .container4 img.star {
+        width: 140px;
+    }
+
+    .container5 .card p {
+        font-size: 24px;
+    }
+
+    .container5 .card span {
+        font-size: 16px;
+    }
+
+    .container6 {
+        height: auto;
+    }
+
+    .container6 .card .type.dua img {
+        width: auto;
+    }
+
+    .container6 .card .type h1 {
+        font-size: 20px;
+    }
+
+    .container6 .card .type span {
+        font-size: 15px;
+    }
+
+    .container6 .card .promo h6 {
+        font-size: 20px;
+    }
+
+    .container6 .card .promo .special {
+        display: flex;
+        width: 210px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .container6 .card .promo .special span {
+        width: 100%;
+    }
+
+    .container6 .card {
+        height: 630px;
+    }
+
+    .container6 .card .promo {
+        width: 297.594px;
+        margin: 30px 0  0 7px;
+        height: 75px;
+    }
+
+    .container6 .card .promo .special {
+        width: 210px;
+        align-items: flex-start;
+    }
+
+    .container6 .card .harga span {
+        font-size: 14px;
+    }
+
+    .container6 .card .harga h1 {
+        font-size: 55px;
+        height: 55px;
+    }
+
+    .container6 .card .list .isi-list p {
+        font-size: 17px;
+    }
+
+    .container7 .col-md-12 h1 {
+        font-size: 30px;
+    }
+
+    .container7 {
+        margin-top: 200px;
+    }
+
+    .container7 .col-md-12 .btn {
+        width: 250px;
+        height: 68px;
+        font-size: 14px;
+    }
+
+    .container7 img.img1 {
+        width: 70px;
+        top: -35px;
+    }
+
+    .container7 img.img2 {
+        width: 180px;
+        bottom: -120px;
+    }
+
+    .container7 img.img3 {
+        width: 150px;
+        top: -70px;
+    }
+
+    .footer {
+        height: 700px;
+    }
+    .footer .row .col-md-3 p {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+    .footer .row .col-md-4 p {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .footer .row .col-md-5,
+    .footer .row .col-md-4,
+    .footer .row .col-md-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .row .col-md-5 img{
+        width: 165px;
+    }
+
+    .footer .row .col-md-5 p {
+        margin-top: 35px;
+    }
+
+    .footer .row .col-md-5 {
+        padding-left: 0;
+    }
+
+}
+
+@media ( max-width: 500px ) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    section.section1 img.decor {
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar .navbar-nav .nav-link:nth-child(1) {
+        color: #2d8aff;
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    button.navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar .navbar-brand img {
+        width: 140px;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav .btn {
+        margin-bottom: 120px;
+        color: white;
+        width: 150px;
+        background-color: #2d8aff;
+    }
+
+    .jumbotron h1 {
+        font-size: 35px;
+        width: 100%;
+        margin-top: 180px;
+    }
+
+    .jumbotron p {
+        display: none;
+    }
+
+    .jumbotron img {
+        display: none;
+    }
+
+    .jumbotron {
+        height: 650px;
+    }
+
+    .jumbotron .btn {
+        width: 220px;
+        height: 60px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .join {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .join h1 {
+        font-size: 30px;
+    }
+
+    .join img {
+        width: 150px;
+    }
+
+    .join p {
+        width: 100%;
+    }
+
+    .join .brand {
+        flex-direction: column;
+        height: 500px;
+    }
+    
+    .join .brand img {
+        width: 120px;
+    }
+
+    .container1 {
+        margin-top: 100px;
+    }
+
+    .container1 img {
+        width: 600px;
+        height: 700px;
+    }
+
+    .container1 h1 {
+        margin-top: -30px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .container1 .btn {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .container2 img {
+        width: 530px;
+        margin-left: 30px;
+    }
+
+    .container2 {
+        margin-top: 20px;
+    }
+
+    .container2 .btn {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+    }
+    
+    .container2 h1 {
+        margin-top: -60px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .container3 img {
+        width: 550px;
+    }
+    
+    .container3 {
+        margin-top: 50px;
+    }
+
+    .container3 .btn {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .container3 h1 {
+        margin-top: 100px;
+         font-size: 30px;
+        line-height: 40px;
+    }
+
+    .container4 .card{
+        margin-top: 50px;
+        border-radius: 10px;
+        width: 300px !important;
+    }
+
+    .container4 .card .name h2 {
+        font-size: 25px;
+    }
+
+    .container4 .card .name img {
+        width: 80px;
+    }
+
+    .container4 .judul h1 {
+        font-size: 30px;
+    }
+
+    .container5 {
+        margin-top: 200px;
+    }
+
+    .container5 .judul h1 {
+        font-size: 30px;
+    }
+
+    .container5 .card1 {
+        margin-top: 100px !important;
+    }
+
+    .container5 .card .pembungkus img {
+        width: 40px;
+    }
+
+    .container5 .card {
+        margin-top: 50px;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .container5 .card .pembungkus {
+        height: 280px;
+    }
+
+    .container5 .card2 {
+        box-shadow: unset;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    .container6 span {
+        width: 100%;
+    }
+
+    .container6 .judul h1 {
+        font-size: 30px;
+    }
+
+    .container6 .card .promo {
+        width: 305px;
+    }
+
+    .container6 .judul span {
+        margin-top: 35px;
+    }
+
+    .container6 .card .list .isi-list {
+        margin-top: 25px;
+    }
+
+    .container6 .card .list .isi-list p {
+        font-size: 15px;
+        width: 82%;
+    }
+
+    .container6 .card {
+        height: 650px;
+        width: 320px !important;
+        margin: 91px auto 0;
+    }
+
+    .container6 .card .type span.sml {
+        width: 220px !important;
+    }
+
+    .container6 .card .promo h6 {
+        top: 0;
+    }
+
+    .container6 .baris-btn .btn {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .container6 .baris-btn {
+        width: 100%;
+        margin: 55px auto 0;
+    }
+    
+    .container7 .col-md-12 .btn {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+        margin-top: 60px;
+    }
+
+    .container7 .col-md-12 h1 {
+        font-size: 28px;
+        margin-top: 90px;
+    }
+
+    .container7 {
+        margin-top: 150px;
+    }
+
+    .container7 .col-md-12 span {
+        margin-top: 20px;
+    }
+
+    .container7 img.img1 {
+        width: 70px;
+        top: -35px;
+    }
+
+    .container7 img.img2 {
+        width: 130px;
+        right: 50px;
+        bottom: -85px;
+    }
+
+    .container7 img.img3 {
+        display: none;
+    }
+
+    .footer .col-md-5,
+    .footer .col-md-4,
+    .footer .col-md-3 {
+        padding: 0;
+    }
+
+}
